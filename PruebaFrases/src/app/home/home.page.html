@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Inicio </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="configNavigate()">
+        <ion-icon name="settings-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button
+    (click)="frasesNavigate()"
+    expand="block"
+    color="medium"
+    fill="outline"
+    >Frases</ion-button
+  >
+
+  <app-random-frase [mostrarST]="mostrar"></app-random-frase>
+</ion-content>

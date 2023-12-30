@@ -1,0 +1,19 @@
+<ion-card color="light" *ngIf="mostrar">
+  <ion-card-header>
+    <ion-card-subtitle>Frase del día</ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-grid>
+      <ion-row class="ion-justify-content-center">
+        <ion-col>
+          <ion-text class="ion-padding ion-text-center">
+            <h2>"{{ randomFrase }}"</h2>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-end">
+        <ion-label color="medium">~ {{ randomAutor }}</ion-label>
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+</ion-card>

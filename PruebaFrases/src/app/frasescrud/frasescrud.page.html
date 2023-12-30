@@ -1,0 +1,13 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Mis frases</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-addfrase (eventoCambio)="recibeSolicitud($event)"></app-addfrase>
+  <app-listfrase [datosDesdePadre]="update"></app-listfrase>
+</ion-content>
